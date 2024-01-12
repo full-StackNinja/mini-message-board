@@ -1,8 +1,75 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 20px;
 }
 
-a {
-  color: #00B7FF;
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.my-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px auto;
+  max-width: fit-content;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px 10px 0 0;
+  border-top: 10px solid #555;
+}
+
+.msg-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.msg-text {
+  font-style: italic;
+  font-size: 20px;
+}
+
+.add-msg {
+  /* border: 1px solid; */
+  text-align: center;
+}
+
+.btn-msg {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgb(37, 37, 163);
+  color: #faf9f9;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 5px;
+}
+
+input[type="submit"] {
+  border: 1px solid #525050;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: #1b1818;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #ddcaca;
 }
