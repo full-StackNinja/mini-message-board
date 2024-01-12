@@ -2,4 +2,14 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+   hr
+  for msg in messages
+    div.msg-container
+      h2 #{msg.user}
+      p #{msg.added}
+      p(class="msg-text") #{msg.text}
+      
+
+  a(href="/new" class="add-msg")  
+    button(class='btn-msg') Send Message
+
