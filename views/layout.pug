@@ -2,6 +2,15 @@ doctype html
 html
   head
     title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="/stylesheets/meyer-reset-1st.css")
+    link(rel="stylesheet", href="/stylesheets/my-css-reset-2nd.css")
+    link(rel="stylesheet", href="/stylesheets/normalize-3rd.css")
+    link(rel="stylesheet", href="/stylesheets/typography-4th.css")
     link(rel='stylesheet', href='/stylesheets/style.css')
+
   body
-    block content
+    div(class= 'my-container')
+      block content
+
