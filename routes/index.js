@@ -15,8 +15,18 @@ const messages = [
 ];
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get("/", function (req, res, next) {
+  res.render("index", { title: "Mini Messageboard", messages: messages });
 });
 
+router.get("/new", (req, res) => {
+  res.render("form");
+});
+
+router.post("/new", (req, res, next) => {
+  const newUser = req.body.user;
+  const newText = req.body.text;
+  messages.push({ text: newText, user: newUser, added: new Date() });
+  res.redirect("/");
+});
 module.exports = router;
