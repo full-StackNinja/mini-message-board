@@ -40,6 +40,10 @@ h2 {
   font-size: 20px;
 }
 
+p{
+  font-size: 14px;
+}
+
 .add-msg {
   /* border: 1px solid; */
   text-align: center;
@@ -72,4 +76,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
   cursor: pointer;
   background-color: #ddcaca;
+}
+
+form{
+  display: block;
 }
