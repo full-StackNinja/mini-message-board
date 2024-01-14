@@ -6,8 +6,9 @@ block content
   for msg in messages
     div.msg-container
       h2 #{msg.user}
-      p #{msg.added}
+      
       p(class="msg-text") #{msg.text}
+      p #{msg.added}
       
 
   a(href="/new" class="add-msg")  
